@@ -1,0 +1,137 @@
+:root {
+  --ff-serif: "Livvic", sans-serif;
+
+  /* small screen font-sizes */
+  --fs-100: 0.8125rem; /* 13px */
+  --fs-200: 0.9375rem; /* 15px */
+  --fs-300: 1.125rem; /* 18px */
+  --fs-400: 2rem; /* 32px */
+  --fs-900: 2.5rem; /* 40px */
+
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --clr-neutral-100: #fff;
+
+  --clr-primary-100: #014e56;
+  --clr-primary-200: #f67e7e;
+
+  --clr-secondary-100: #79c8c7;
+  --clr-secondary-200: #2c6269;
+  --clr-secondary-300: #004047;
+  --clr-secondary-400: #012f34;
+  --clr-secondary-500: #002529;
+
+  --br: 0.06rem;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+  font-family: var(--ff-serif);
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--br);
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--ff-serif);
+  font-size: var(--fs-200);
+  background-color: var(--clr-primary-100);
+  color: var(--clr-neutral-100);
+}
+
+/* Typography */
+
+.main__title {
+  font-size: var(--fs-900);
+}
+
+.section__title {
+  font-size: var(--fs-400);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+}
+
+.main__title span {
+  color: var(--clr-primary-200);
+}
+
+/* Utility Class */
+.container {
+  max-width: 573px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flow-content > * + * {
+  margin-top: 0.5rem;
+}
+
+/* General Layout*/
+
+.nav {
+  padding-top: 3rem;
+}
+
+.nav__container {
+  max-width: 689px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.features {
+  background-color: var(--bg-dark, var(--clr-secondary-400));
+  /* background-image: url(/starter-code/images/bg-pattern-about-4.svg);
+  background-repeat: no-repeat;
+  background-position: right top; */
+}
+
+.features__wrapper > * + * {
+  margin-top: 3rem;
+}
