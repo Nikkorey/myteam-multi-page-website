@@ -85,6 +85,10 @@ body {
   font-size: var(--fs-900);
 }
 
+.text-accent {
+  color: var(--accent, var(--clr-primary-200));
+}
+
 .section__title {
   font-size: var(--fs-400);
 }
@@ -92,10 +96,6 @@ body {
 a {
   text-decoration: none;
   color: var(--clr-neutral-100);
-}
-
-.main__title span {
-  color: var(--clr-primary-200);
 }
 
 /* Utility Class */
@@ -126,10 +126,16 @@ a {
 }
 
 .features {
+  padding-top: 5rem;
+  border: solid;
   background-color: var(--bg-dark, var(--clr-secondary-400));
   /* background-image: url(/starter-code/images/bg-pattern-about-4.svg);
   background-repeat: no-repeat;
   background-position: right top; */
+}
+
+.features .section__title {
+  width: 240px;
 }
 
 .features__wrapper > * + * {
