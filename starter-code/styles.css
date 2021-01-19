@@ -153,11 +153,10 @@ a {
 
 .features {
   padding: 5rem 0;
-  border: solid;
   background-color: var(--bg-dark, var(--clr-secondary-400));
-  /* background-image: url(/starter-code/images/bg-pattern-about-4.svg);
+  background-image: url(./images/bg-pattern-home-3.svg);
   background-repeat: no-repeat;
-  background-position: right top; */
+  background-position: top right -100px;
 }
 
 .features .section__title {
@@ -200,6 +199,10 @@ a {
 
 .testimonials {
   padding: 8.75rem 0;
+  background-image: url(./images/bg-pattern-home-5.svg),
+    url(./images/bg-pattern-home-4-about-3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
 }
 
 .testimonial {
@@ -226,6 +229,9 @@ a {
   background-color: var(--clr-primary-200);
   --font-accent: var(--clr-secondary-400);
   padding: 5.1875rem 0;
+  background-image: url(./images/bg-pattern-home-6-about-5.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -20px left;
 }
 
 @media (min-width: 1024px) {
