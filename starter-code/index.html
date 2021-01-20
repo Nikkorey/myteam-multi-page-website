@@ -15,25 +15,34 @@
   <title>Frontend Mentor | myteam website challenge - Homepage</title>
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav__container">
-      <img src="./images/logo.svg" alt="myteam logo">
-      <div class="toggle"></div>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#">home</a></li>
-        <li class="nav__item"><a href="#">about</a></li>
-      </ul>
-      <a href="#" class="btn">contact us</a>
-    </div>
-  </nav>
 
-  <header class="text-center">
+    <nav class="nav">
+      <div class="container">
+        <img src="./images/logo.svg" alt="myteam logo" class="nav__logo">
+        <!-- Menu Bars -->
+        <div class="toggle">
+          <img src="/starter-code/images/icon-hamburger.svg" alt="hamburger icon">
+        </div>
+        <!-- Nav Items -->
+        <div class="overlay">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">home</a></li>
+            <li class="nav__item"><a href="about.html">about</a></li>
+            <li><a href="contact.html" class="btn">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Header -->
+  <header class="header text-center">
     <div class="container">
       <h1 class="main__title">Find the best <span class="text-accent">talent</span></h1>
       <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
     </div>
   </header>
 
+  <!-- Features Section -->
   <section class="features">
     <div class="container split">
       <h2 class="section__title">Build & manage distributed teams like no one else.</h2>
@@ -62,6 +71,7 @@
     </div>
   </section>
 
+  <!-- Testimonial Section -->
   <section class="testimonials text-center">
     <div class="container">
       <h2 class="section__title">Delivering real results for top companies. Some of our <span class="text-100">success stories.</span></h2>
@@ -95,6 +105,7 @@
     </div>
   </section>
 
+  <!-- Call to Action -->
   <section class="cta text-center">
     <div class="container">
       <h2 class="section__title">Ready to get started?</h2>
@@ -102,6 +113,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
       <img src="/starter-code/images/logo.svg" alt="myteam logo" class="footer__logo">
