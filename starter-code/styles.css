@@ -254,6 +254,13 @@ a {
   border: solid;
 }
 
+/* Contact*/
+.contact {
+  background-image: url(/starter-code/images/bg-pattern-contact-2.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -100px right -100px;
+}
+
 @media (min-width: 1024px) {
   .features .split {
     justify-content: space-between;
