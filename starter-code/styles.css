@@ -254,6 +254,48 @@ a {
   border: solid;
 }
 
+/* About */
+/* Directors */
+
+.directors {
+  background-color: var(--clr-secondary-300);
+  background-image: url(/starter-code/images/bg-pattern-about-2-contact-1.svg),
+    url(./images/bg-pattern-home-4-about-3.svg);
+  background-repeat: no-repeat;
+  background-position: top -100px left -100px, bottom right;
+  padding: 6.25rem 0 7.5rem 0;
+}
+
+.card {
+  position: relative;
+}
+
+.directors__container > * + * {
+  margin-top: 3rem;
+}
+
+.directors .card {
+  background-color: var(--clr-secondary-400);
+  padding: 2rem 0 3.5rem 0;
+}
+
+.director__img {
+  width: 96px;
+  border-radius: 50%;
+  border: solid white;
+}
+
+button {
+  background-color: var(--clr-primary-200);
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  padding: 1rem;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
 /* Contact*/
 .contact {
   background-image: url(/starter-code/images/bg-pattern-contact-2.svg);
