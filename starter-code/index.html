@@ -14,28 +14,28 @@
   
   <title>Frontend Mentor | myteam website challenge - Homepage</title>
 </head>
-<body>
-
-    <nav class="nav">
-      <div class="container">
-        <img src="./images/logo.svg" alt="myteam logo" class="nav__logo">
-        <!-- Menu Bars -->
-        <div class="toggle">
-          <img src="/starter-code/images/icon-hamburger.svg" alt="hamburger icon">
-        </div>
-        <!-- Nav Items -->
-        <div class="overlay">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#">home</a></li>
-            <li class="nav__item"><a href="about.html">about</a></li>
-            <li><a href="contact.html" class="btn">contact us</a></li>
-          </ul>
-        </div>
+<body class="page-home">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <img src="./images/logo.svg" alt="myteam logo" class="nav__logo">
+      <!-- Menu Bars -->
+      <div class="toggle">
+        <img src="/starter-code/images/icon-hamburger.svg" alt="hamburger icon">
       </div>
-    </nav>
+      <!-- Nav Items -->
+      <div class="overlay">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">home</a></li>
+          <li class="nav__item"><a href="about.html">about</a></li>
+          <li><a href="contact.html" class="btn">contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Header -->
-  <header class="header text-center">
+  <header class="primary-header text-center">
     <div class="container">
       <h1 class="main__title">Find the best <span class="text-accent">talent</span></h1>
       <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
@@ -109,30 +109,35 @@
   <section class="cta text-center">
     <div class="container">
       <h2 class="section__title">Ready to get started?</h2>
-      <a href="#" class="btn">contact us</a>
+      <a href="contact.html" class="btn btn-accent">contact us</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
-      <img src="/starter-code/images/logo.svg" alt="myteam logo" class="footer__logo">
-      <ul class="footer__nav split">
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-      </ul>
-      <address class="footer__address">
-        <p>987  Hillcrest Lane</p>
-        <p>Irvine, CA</p>
-        <p>California 92714</p>
-        <p>Call Us : 949-833-7432</p>
-      </address>
-      <ul class="footer__social split">
-        <li><a href="#"><img src="/starter-code/images/icon-facebook.svg" alt="icon-facebook"></a></li>
-        <li><a href="#"><img src="/starter-code/images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
-        <li><a href="#"><img src="/starter-code/images/icon-twitter.svg" alt="icon-twitter"></a></li>
-      </ul>
-      <p>Copyright 2020. All Rights Reserved</p>
+      <div class="footer__grid">
+        <nav class="footer__nav">
+          <img src="/starter-code/images/logo.svg" alt="myteam logo" class="footer__logo">
+          <ul class="footer__navItems split">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </nav>
+    
+        <address>
+          <p>987  Hillcrest Lane</p>
+          <p>Irvine, CA</p>
+          <p>California 92714</p>
+          <p>Call Us : 949-833-7432</p>
+        </address>
+        <ul class="footer__social split">
+          <li><a href="#"><img src="/starter-code/images/icon-facebook.svg" alt="icon-facebook"></a></li>
+          <li><a href="#"><img src="/starter-code/images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
+          <li><a href="#"><img src="/starter-code/images/icon-twitter.svg" alt="icon-twitter"></a></li>
+        </ul>
+        <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
+      </div>
     </div>
   </footer>
 </body>
